@@ -1,6 +1,7 @@
 package polaries;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.Assert.fail;
 
@@ -13,6 +14,8 @@ public class TestClass {
 		
 		assertEquals("twelve ", ConvertNumberToWord.convertToWords(12));
 		assertNotEquals("Ten", ConvertNumberToWord.convertToWords(9));
+		assertNotNull("", ConvertNumberToWord.convertToWords(10));
+		
 	}
 
 	@Test
