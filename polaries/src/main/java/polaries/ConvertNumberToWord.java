@@ -25,7 +25,7 @@ public class ConvertNumberToWord {
 		
 	}
 
-	public static String convertToWords(int num) {
+	public static String convertToWords(int num) throws CustomException {
 		
 		String out="";
 		out += numToWords((num / 10000000)," crore ");
@@ -40,7 +40,7 @@ public class ConvertNumberToWord {
 		return out;
 	}
 
-	public static String numToWords(int num, String str) {
+	public static String numToWords(int num, String str) throws CustomException{
 
 		  String  word = "";
 		  
